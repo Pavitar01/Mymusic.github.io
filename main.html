@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="thismain.css">
+    <link rel = "icon" href = "icon/icon.png" type = "image/x-icon">
+    <title>Mymusic.com</title>
+
+</head>
+<body>
+    <div class="main">
+<span>
+    <img src="icon/icon.png">
+    <p><span>MyCode.</span></p></span>
+    
+
+    <!-- left -->
+
+    <div class="left">
+        <img src="" alt="Song" id="track">
+        <div class="volume">
+        <p id="vol_show">100</p>
+        <p><i class="bi bi-volume-up-fill" id="vol_icon" onclick="mutesound()"></i></p>
+        <input type="range" min="0" max="100" value="100" onchange="volume_change()" id="volume1">
+</div>
+    </div>
+
+    <!-- Right -->
+
+    <div class="right">
+        <div class="show_no">
+            <p id="present">1</p>
+            <p>/</p>
+            <p id="total">5</p>
+</div>
+
+            <!-- song title -->
+        <p id="title">title.mp3</p>
+       
+        <marquee width="20%" direction="left" height="100px" id="Artist" >
+            Artist name
+            </marquee>
+
+        <!-- middle -->
+
+        <div class="middle">
+            <button onclick="pre_song()" id="pre"><i class="bi bi-skip-backward-circle"></i></button>
+            <button onclick="justplay()"  id="play1"><i class="bi bi-play-circle-fill"></i></button>
+            <button onclick="next_song()" id="next"><i class="bi bi-skip-forward-circle"></i></button>
+        </div> 
+
+
+        <!-- song duration -->
+
+        <div class="duration">
+            <input type="range" min="0" max="100" value="0" id="dur_slider" onchange="change_dur()">
+        </div>
+
+        <button id="auto" onclick="autoplayy()">Auto Play <i class="bi bi-play"></i></button>
+        <i class="bi bi-download" id="download" onclick="dld()"><a href=""></a></i>
+
+        </div>
+</div>
+
+
+
+<script src="main.js"></script>
+</body>
+</html>

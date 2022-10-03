@@ -1,0 +1,271 @@
+
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    color: white;
+    background: linear-gradient(to left,blue,black);
+  
+
+}
+.main{
+    position: relative;
+    height: 90%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(to right,blue,black);
+    border-radius: 20px;
+    
+}
+.main button{
+    padding: 10px 13px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.main span img {
+    position: absolute;
+    top: 2px;
+    left:5px;
+    width: 56px;
+
+}
+.main span p {
+    position: absolute;
+    font-size: 19px;
+    top: 16px;
+    left:65px;
+    font-weight: 900;
+}
+
+
+/* left */
+.right,.left{
+position: relative;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+
+}
+/* song image */
+.left img{
+height: 300px;
+width: 80%;
+border-radius: 15px;
+cursor: pointer;
+transition: .5s ease-in-out;
+box-shadow: 1px 0px 20px 5px rgba(211, 202, 202, 0.2);
+}
+
+.left img:hover{
+    box-shadow: 1px 0px 20px 5px rgb(238, 234, 234,0.8);
+}
+
+/* range slider */
+
+input[type="range"]
+{
+    -webkit-appearance: none;
+    width: 50%;
+    outline: none;
+    height: 2px;
+    margin: 0 15px;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    background:linear-gradient(to right , crimson,white);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.right input[type="range"]{
+    width: 40%;
+}
+.left .volume{
+    position: absolute;
+    bottom:10%;
+    left:0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.left .volume p{
+   font-size:15px;
+   padding: 12px;
+}
+.left .volume i{
+    border-radius: 50px;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px 12px;
+    color: white;
+    transition: .3s linear;
+    background:rgb(205, 47, 78);
+}
+
+
+.left .volume i:hover{
+    color: blue;
+    background:rgb(215, 170, 179);
+    box-shadow: 1px 1px 14px 10px rgba(211, 202, 202, .4);;
+}
+
+.volume #vol_show{
+border-radius: 15px;
+padding: 8px 12px;
+margin: 0 5px 0 0;
+background: rgba(215, 193, 198, 0.2);
+}
+
+/* right part */
+.right .middle
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right .middle button{
+
+border: none;
+
+height: 80px;
+width: 80px;
+border-radius:50px;
+display:flex;
+align-items:center;
+justify-content: center;
+cursor: pointer;
+transition: 0.4s;
+background: rgba(30, 198, 198, 0.1);
+}
+
+.right .middle button i{
+
+font-size :25px;
+color: whitesmoke;
+
+    }
+    
+    .right #title{
+        position: absolute;
+        top:60px;
+        left:50%;
+        transform: translate(-50%);
+        text-transform: capitalize;
+        color: white;
+        font-size: 25px;
+    
+
+    }
+
+    .right #Artist{
+        position: absolute;
+        top:110px;
+        left:50%;
+        transform: translate(-50%);
+        text-transform: capitalize;
+        color: white;
+        font-size: 15px;
+
+    }
+    
+    .right .duration{
+        position: absolute;
+        bottom:20%;
+        left: 50%;
+        transform: translateX(-50%);
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 20px;
+        margin-top: 40px;
+
+    }
+
+    .right .duration p{
+        color: white;
+        font-size:15px;
+        margin-left: 20px;
+
+    }
+    .right #auto{
+
+        font-size:18px;
+        cursor: pointer;
+        margin-top: 45px;
+        border: none;
+        padding: 10px 14px;
+        color: white;
+        outline: none;
+        border-radius: 10px;
+        background:rgba(245,245,245,0.2);
+    }
+    .right #auto i{
+        margin-left: 8px;
+    }
+
+    #play{
+        background: rgba(245,245,245,0.2);    
+    }
+
+    .right button:hover{
+     background: rgba(245,245,245,0.2);;
+    }
+
+    .right i::before{
+        color: white;
+        width: 25px;
+    }
+    .right .show_no{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 12px;
+        color: white;
+        border-radius: 5px;
+        background: rgba(245,245,245,0.2);
+
+    }
+
+    .right .show_no p:nth-child(2){
+        margin:0 5px; 
+    }
+
+    .right #download{
+            position: absolute;
+            bottom:10px;
+            right: 1px;
+            cursor: pointer;
+            font-size: 20px;
+        } 
+
+        
+
+    
